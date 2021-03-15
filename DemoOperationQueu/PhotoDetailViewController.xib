@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PhotoDetailViewController" customModule="DemoOperationQueu" customModuleProvider="target">
+            <connections>
+                <outlet property="photoTbv" destination="pO3-Wt-82X" id="VTT-jp-SP5"/>
+                <outlet property="uploadBtn" destination="k4X-iG-JeF" id="ZKw-qG-uFy"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pO3-Wt-82X">
+                    <rect key="frame" x="10" y="54" width="394" height="734"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="rTL-c9-gc5"/>
+                        <outlet property="delegate" destination="-1" id="6K8-PS-Z5C"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k4X-iG-JeF">
+                    <rect key="frame" x="169.5" y="808" width="224.5" height="34"/>
+                    <state key="normal" title="Download">
+                        <color key="titleColor" red="0.078431372550000003" green="0.4039215686" blue="0.74901960779999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="downloadBtnAction:" destination="-1" eventType="touchUpInside" id="YLD-gP-n6H"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IVR-dJ-Wq8">
+                    <rect key="frame" x="10" y="810" width="149.5" height="30"/>
+                    <state key="normal" title="Back"/>
+                    <connections>
+                        <action selector="backBtnAction:" destination="-1" eventType="touchUpInside" id="hvc-j4-e49"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="k4X-iG-JeF" secondAttribute="trailing" constant="20" id="29g-GT-Hks"/>
+                <constraint firstItem="pO3-Wt-82X" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="94w-s4-ndL"/>
+                <constraint firstItem="k4X-iG-JeF" firstAttribute="top" secondItem="pO3-Wt-82X" secondAttribute="bottom" constant="20" id="MRd-oX-kMF"/>
+                <constraint firstItem="pO3-Wt-82X" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="WMh-Vb-CZW"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="k4X-iG-JeF" secondAttribute="bottom" constant="20" id="XCh-SK-QAR"/>
+                <constraint firstItem="IVR-dJ-Wq8" firstAttribute="width" secondItem="k4X-iG-JeF" secondAttribute="width" multiplier="0.666667" id="ZVj-46-6rO"/>
+                <constraint firstItem="IVR-dJ-Wq8" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="buS-zH-nXI"/>
+                <constraint firstItem="k4X-iG-JeF" firstAttribute="centerY" secondItem="IVR-dJ-Wq8" secondAttribute="centerY" id="oQk-cb-qbr"/>
+                <constraint firstItem="k4X-iG-JeF" firstAttribute="leading" secondItem="IVR-dJ-Wq8" secondAttribute="trailing" constant="10" id="pEV-ax-Nfi"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="pO3-Wt-82X" secondAttribute="trailing" constant="10" id="zgB-1k-FuT"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="139" y="153"/>
+        </view>
+    </objects>
+</document>

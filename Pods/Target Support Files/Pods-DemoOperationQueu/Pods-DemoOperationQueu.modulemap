@@ -1,0 +1,6 @@
+framework module Pods_DemoOperationQueu {
+  umbrella header "Pods-DemoOperationQueu-umbrella.h"
+
+  export *
+  module * { export * }
+}
