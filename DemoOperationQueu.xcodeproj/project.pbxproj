@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		50F4B849DCB5F8CDFE9A2046 /* Pods_DemoOperationQueu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 860F1124E895AAA4756E209B /* Pods_DemoOperationQueu.framework */; };
+		8A1A4D692628233100F31F42 /* PhotoPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1A4D672628233100F31F42 /* PhotoPopupViewController.swift */; };
+		8A1A4D6A2628233100F31F42 /* PhotoPopupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A1A4D682628233100F31F42 /* PhotoPopupViewController.xib */; };
 		8AF4DB9A25FDB81B00336CDD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF4DB9925FDB81B00336CDD /* AppDelegate.swift */; };
 		8AF4DB9C25FDB81B00336CDD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF4DB9B25FDB81B00336CDD /* SceneDelegate.swift */; };
 		8AF4DB9E25FDB81B00336CDD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF4DB9D25FDB81B00336CDD /* ViewController.swift */; };
@@ -27,6 +29,8 @@
 		68379C5CAB1C1BE749DE07D6 /* Pods-DemoOperationQueu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoOperationQueu.debug.xcconfig"; path = "Target Support Files/Pods-DemoOperationQueu/Pods-DemoOperationQueu.debug.xcconfig"; sourceTree = "<group>"; };
 		6ECB01EAF3B4BD0685E6E60B /* Pods-DemoOperationQueu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoOperationQueu.release.xcconfig"; path = "Target Support Files/Pods-DemoOperationQueu/Pods-DemoOperationQueu.release.xcconfig"; sourceTree = "<group>"; };
 		860F1124E895AAA4756E209B /* Pods_DemoOperationQueu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoOperationQueu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A1A4D672628233100F31F42 /* PhotoPopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPopupViewController.swift; sourceTree = "<group>"; };
+		8A1A4D682628233100F31F42 /* PhotoPopupViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoPopupViewController.xib; sourceTree = "<group>"; };
 		8AF4DB9625FDB81B00336CDD /* DemoOperationQueu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoOperationQueu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AF4DB9925FDB81B00336CDD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8AF4DB9B25FDB81B00336CDD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -95,6 +99,8 @@
 				8AF4DBB625FDBC4F00336CDD /* PhotoDetailViewController.xib */,
 				8AF4DBB125FDBBE700336CDD /* PhotoTableViewCell.swift */,
 				8AF4DBB225FDBBE700336CDD /* PhotoTableViewCell.xib */,
+				8A1A4D672628233100F31F42 /* PhotoPopupViewController.swift */,
+				8A1A4D682628233100F31F42 /* PhotoPopupViewController.xib */,
 				8AF4DBA225FDB81D00336CDD /* Assets.xcassets */,
 				8AF4DBA425FDB81D00336CDD /* LaunchScreen.storyboard */,
 				8AF4DBA725FDB81D00336CDD /* Info.plist */,
@@ -174,6 +180,7 @@
 			files = (
 				8AF4DBB825FDBC4F00336CDD /* PhotoDetailViewController.xib in Resources */,
 				8AF4DBB425FDBBE700336CDD /* PhotoTableViewCell.xib in Resources */,
+				8A1A4D6A2628233100F31F42 /* PhotoPopupViewController.xib in Resources */,
 				8AF4DBA625FDB81D00336CDD /* LaunchScreen.storyboard in Resources */,
 				8AF4DBA325FDB81D00336CDD /* Assets.xcassets in Resources */,
 				8AF4DBA125FDB81B00336CDD /* Main.storyboard in Resources */,
@@ -237,6 +244,7 @@
 				8AF4DB9A25FDB81B00336CDD /* AppDelegate.swift in Sources */,
 				8AF4DBAE25FDB91200336CDD /* RequestApi.swift in Sources */,
 				8AF4DB9C25FDB81B00336CDD /* SceneDelegate.swift in Sources */,
+				8A1A4D692628233100F31F42 /* PhotoPopupViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

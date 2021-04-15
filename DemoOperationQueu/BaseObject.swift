@@ -25,6 +25,18 @@ class AlbumBO: Mappable {
     var title: String?
     var total: String?
     
+    func clone() -> AlbumBO {
+        var data = AlbumBO()
+        data.id = self.id
+        data.title = self.title
+        data.total = self.total
+        return data
+    }
+    
+    func printData() {
+        print("\(id ?? 0),\(title ?? "")")
+    }
+    
     init() {
     }
     required init?(map: Map) {
@@ -57,6 +69,13 @@ class PhotosBO: Mappable {
     var url: String?
     var thumbnailUrl: String?
     
+    func clone() -> AlbumBO {
+        var data = AlbumBO()
+        data.id = self.id
+        data.title = self.title
+        return data
+    }
+    
     init() {
     }
     required init?(map: Map) {
@@ -68,5 +87,27 @@ class PhotosBO: Mappable {
         albumId <- map["albumId"]
         url <- map["url"]
         thumbnailUrl <- map["thumbnailUrl"]
+    }
+}
+
+class PhotoBuilder {
+    var photo: PhotosBO
+    
+    init() {
+        self.photo = PhotosBO()
+    }
+    
+    func build() -> PhotosBO {
+        return self.photo
+    }
+    
+    func setId(_ id: Int) -> PhotoBuilder {
+        photo.id = id
+        return self
+    }
+    
+    func setTitle(_ title: String) -> PhotoBuilder {
+        photo.title = title
+        return self
     }
 }

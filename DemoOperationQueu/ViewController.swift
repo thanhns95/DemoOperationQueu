@@ -96,12 +96,28 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let detailVc = PhotoDetailViewController()
-        let album = self.listAlbum[indexPath.row]
-        detailVc.listPhotos = listPhotos.filter({ $0.albumId == album.id})
+//        let detailVc = PhotoDetailViewController()
+//        let album = self.listAlbum[indexPath.row]
+//        detailVc.listPhotos = listPhotos.filter({ $0.albumId == album.id})
+//        detailVc.modalPresentationStyle = .overFullScreen
+//        present(detailVc, animated: true, completion: nil)
+        let clonedata = self.listAlbum[indexPath.row].clone()
+        clonedata.id = 5
+        clonedata.title = "thay doi"
+        clonedata.printData()
+        self.listAlbum[indexPath.row].printData()
+        
+        let data = PhotoBuilder().setId(3).setTitle("duoc roi").build()
+        
+        let detailVc = PhotoPopupViewController()
+        detailVc.data = data
         detailVc.modalPresentationStyle = .overFullScreen
         present(detailVc, animated: true, completion: nil)
+        
+        
     }
+    
+    
 
 }
 

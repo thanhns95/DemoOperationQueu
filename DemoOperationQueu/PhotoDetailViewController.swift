@@ -71,4 +71,5 @@ class PhotoDetailViewController: UIViewController, UITableViewDataSource, UITabl
         cell.bindDataPhoto(data)
         return cell
     }
+    
 }
